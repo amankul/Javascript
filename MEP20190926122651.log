@@ -1,0 +1,84 @@
+MaaSHTTPProxy version 0.4a
+
+[2019-09-26T05:26:58Z] Listening on http://localhost:8889/
+
+[2019-09-26T05:27:54Z] command=>get, url=>http://analytics-api.phunware.com/v1.0/health, parameters=>, headers=>x-client-id=;x-org-id=
+URL Before sending to Secure Proxy : http://analytics-api.phunware.com/v1.0/health
+[2019-09-26T05:27:54Z] Response code => 404
+[2019-09-26T05:27:54Z] Response => <html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+[2019-09-26T05:29:42Z] command=>post, url=>http://analytics-api.phunware.com/v1.0/events, parameters=>{
+	"appId": 65,
+	"eventId": 1,
+	"value": 3.50
+}, headers=>x-client-id=;x-org-id=
+URL Before sending to Secure Proxy : http://analytics-api.phunware.com/v1.0/events
+[2019-09-26T05:29:42Z] Response code => 200
+[2019-09-26T05:29:42Z] Response => 
+
+[2019-09-26T05:32:53Z] command=>post, url=>http://analytics-api-dev.phunware.com/v1.0/events, parameters=>{
+	
+		"schemaVersion": "3.0",
+		"sdkVersion": "3.0.1",
+		"type": "MAAS_CORE",
+		"action": "SESSION_START",
+		"sessionId": "9464e6d8-52c9-4025-b671-1cb63a0d4092",
+		"app": {
+			"applicationId": "644",
+			"ver": "3.4.1-SNAPSHOT(354)"
+		},
+		"device": {
+			"userAgent": "Dalvik\/2.1.0 (Linux; U; Android 7.0; SAMSUNG-SM-G930A Build\/NRD90M)",
+			"id": {
+				"encoding": "RAW",
+				"type": "AndroidAdId",
+				"value": "b8c70176-e1d2-4c64-8720-4e365a6c3286"
+			},
+			"timezone": "EST",
+			"lang": "eng",
+			"macAddress": "02:00:00:00:00:00",
+			"make": "samsung",
+			"model": "SAMSUNG-SM-G930A",
+			"os": "android",
+			"osv": "7.0",
+			"osApiLevel": "24",
+			"ipAddress": "10.190.191.64",
+			"carrier": "AT&T",
+			"connection": "WIFI",
+			"wifiEnabled": true,
+			"pushEnabled": true,
+			"bluetoothEnabled": true,
+			"SSID": {
+				"BSSID": "34:bd:c8:d8:64:ff",
+				"SSID": "phunware-an"
+			}
+		},
+		"timestamp": "2018-06-06T16:23:07Z",
+		"location": {
+			"altitude": 193,
+			"hAccuracy": 18,
+			"lat": 30.359915,
+			"long": -97.742485,
+			"vAccuracy": 18
+		}
+	}, headers=>x-client-id=644;x-org-id=1
+URL Before sending to Secure Proxy : http://analytics-api-dev.phunware.com/v1.0/events
+[2019-09-26T05:32:53Z] Response code => 200
+[2019-09-26T05:32:53Z] Response => 
+
+[2019-09-26T05:34:21Z] command=>post, url=>http://analytics-api.phunware.com/v1.0/events, parameters=>{
+	"appId": 65,
+	"eventId": 1,
+	"value": 3.50
+}, headers=>x-client-id=1382;x-org-id=1
+URL Before sending to Secure Proxy : http://analytics-api.phunware.com/v1.0/events
+[2019-09-26T05:34:21Z] Response code => 200
+[2019-09-26T05:34:21Z] Response => 
+
