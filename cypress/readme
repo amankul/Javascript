@@ -1,0 +1,11 @@
+Cypress - E2E testing framework
+
+Not selenium
+Javascript based
+Interacts with browser natively - fast consistent reliable
+Time travel takes screenshots are your tests run(b4 and after) -- command log
+Automatic waits(doesn't fail when element not found in first go)
+Mocha test runner inbuilt with cypress
+Dont have to worry abt building a framework
+
+"npx cypress open" to launch

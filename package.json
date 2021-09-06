@@ -18,5 +18,10 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "My first js"
 }
